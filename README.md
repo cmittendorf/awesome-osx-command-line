@@ -933,6 +933,14 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 osascript /path/to/script.scpt
 ```
 
+#### Execute AppleScript in Shell Script
+```bash
+#!/usr/bin/env bash
+osascript << EOF
+say "Hello World!"
+EOF
+```
+
 ### Basics
 
 #### Restart
